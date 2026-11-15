@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    padding: 20px 10px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+h1 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #444;
+    margin: 15px 0 10px;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+.katalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    width: calc(50% - 6px);
+    text-align: center;
+}
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto 8px;
+    display: block;
+    border-radius: 4px;
+}
+.card h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+.card p {
+    font-size: 13px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.jumlah-kontrol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.jumlah-kontrol button {
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    color: #333;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.jumlah-kontrol button:hover {
+    background: #e0e0e0;
+}
+.jumlah-kontrol span {
+    font-weight: bold;
+    min-width: 15px;
+}
+.keranjang-box {
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+.empty-text {
+    color: #aaa;
+    text-align: center;
+}
+.total-section {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 16px;
+}
+#total-harga {
+    color: #d32f2f;
+    font-weight: bold;
+}
+.input-group {
+    margin-bottom: 12px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    outline: none;
+    font-family: inherit;
+}
+input:focus, textarea:focus, select:focus {
+    border-color: #2e7d32;
+}
+.info-box {
+    background: #f9f9f9;
+    border: 1px dashed #2e7d32;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.info-box p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+button[type="submit"]:hover {
+    background: #1b5e20;
+}

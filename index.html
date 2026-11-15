@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Souvenir Resmi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Toko Souvenir Ala Ahmad</h1>
+        <h3>Pilihan Produk:</h3>
+        <div id="katalog-container" class="katalog-list"></div>
+        <hr>
+        <h3>Keranjang Belanja:</h3>
+        <div id="daftar-pesanan" class="keranjang-box">
+            <p class="empty-text"><i>Belum ada barang dipilih.</i></p>
+        </div>
+        <div class="total-section">
+            <strong>Total Harga: <span id="total-harga">Rp 0</span></strong>
+        </div>
+        <hr>
+        <h3>Data Pemesan:</h3>
+        <form id="form-pemesanan">
+            <div class="input-group">
+                <label for="nama-pemesan">Nama Lengkap:</label>
+                <input type="text" id="nama-pemesan" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label for="no-hp-pemesan">Nomor HP / WhatsApp Anda:</label>
+                <input type="tel" id="no-hp-pemesan" placeholder="Contoh: 0812xxxxxxxx" required>
+            </div>
+
+            <div class="input-group">
+                <label for="alamat-pemesan">Alamat Pengiriman:</label>
+                <textarea id="alamat-pemesan" rows="3" placeholder="Masukkan alamat pengiriman lengkap" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="metode-pembayaran">Metode Pembayaran:</label>
+                <select id="metode-pembayaran" required>
+                    <option value="" disabled selected>-- Pilih Metode Pembayaran --</option>
+                    <option value="ShopeePay">ShopeePay</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Bayar di Tempat (COD)">Bayar di Tempat (COD)</option>
+                </select>
+            </div>
+
+            <!-- Kontainer Input Tambahan Dinamis (ShopeePay / Pilihan Bank) -->
+            <div id="detail-pembayaran-container"></div>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
